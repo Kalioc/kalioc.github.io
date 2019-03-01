@@ -9,15 +9,18 @@
     <script>
         var num;
         var lowNum = -1;
-        var i = parseInt(window.prompt(“Enter the amount of numbers: “));
+        var i = parseInt(window.prompt("Enter the amount of numbers: "));
         while(i > 0) {
-            num = parseInt(window.prompt("Enter a number: ")));
-            if(lowNum == -1)
+            num = parseInt(window.prompt("Enter a number: "));
+            if(lowNum == -1) {
                 lowNum = num;
-            if(num < lowNum)
+            }
+            if(num < lowNum) {
                 lowNum = num;
+            }
             i--;
         }
+        document.write("The lowest number entered was " + lowNum + ".");
     </script>
 </head>
 
