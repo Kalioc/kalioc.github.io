@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>stuff</title>
+    <style>
+    </style>
+    <script>
+        var n = window.prompt("Enter a number to evaluate: ");
+        
+        while (n != "exit") {
+            var result = isEven(n);
+            if(result == true)
+                document.write(n + " is an even number.<br>");
+            else
+                document.write(n + " is not an even number.<br>");
+            n = window.prompt("Enter a number to evalute, or type \"exit\" to exit: ");
+        }
+        
+        function isEven(n) {
+            if(n % 2 == 0)
+                return true;
+            return false;
+        }
+        
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
