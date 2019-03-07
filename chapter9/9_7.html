@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>stuff</title>
+    <style>
+    </style>
+    <script>
+        var n = 0;
+        var str = window.prompt(
+            "Enter \"celsius\" or \"fahrenheit\" to covert to that standard: "
+        );
+        
+        if(str.toLowerCase() == "celsius"){
+            n = window.prompt("Enter a tempature to convert to celius: ");
+            document.write(n + "`F is equal to " + toCelsius(n) + "`C.");
+        }
+        else if(str.toLowerCase() == "fahrenheit"){
+            n = window.prompt("Enter a tempature to convert to fahrenheit: ");
+            document.write(n + "`C is equal to " + toFahrenheit(n) + "`F.");
+        }
+        else
+            document.write("Neither celsius or fahrenheit was chosen.");
+        
+        function toCelsius(f) {
+            return (5.0 / 9.0) * (f - 32);
+        }
+
+        function toFahrenheit(c) {
+            return ((9.0 / 5.0) * c) + 32;
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
