@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>stuff</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        var total = new Array(9);
+        total = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+        function addSales() {
+            var sales = document.getElementById("sales");
+            var salary = 200 + parseInt(sales.text.value) * 0.09;
+            salary = Math.floor(salary / 100);
+            if (salary > 9)
+                salary = 10;
+            total[salary - 2] += 1;
+
+            output(); // Seperate function so its cleaner.
+        }
+
+        function output() {
+            var sales = document.getElementById("sales");
+            sales.output.value =
+                "Salespeople in salary ranges:" +
+                "\n$200 - 299: " + total[0] +
+                "\n$300 - 399: " + total[1] +
+                "\n$400 - 499: " + total[2] +
+                "\n$500 - 599: " + total[3] +
+                "\n$600 - 699: " + total[4] +
+                "\n$700 - 799: " + total[5] +
+                "\n$800 - 899: " + total[6] +
+                "\n$900 - 999: " + total[7] +
+                "\n    $1000+: " + total[8];
+        }
+    </script>
+</head>
+
+<body>
+    <form id="sales">
+        <label for="text">Enter sales amount: </label>
+        <input type="text" name="text">
+        <input type="button" value="Submit" onclick="addSales()">
+        <p>
+            <textarea name="output" cols="41" rows="10">Clicking submit will populate the textarea and update it from the input.</textarea>
+        </p>
+    </form>
+</body>
+
+</html>
