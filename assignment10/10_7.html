@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>stuff</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+       function reverseString() {
+           var form = document.getElementById("form");
+           var str = form.input.value;
+           var rvsStr = ""; // Initialized so it is defined for addition.
+           
+           // Loops through the original string backwards
+           for(var i = str.length - 1; i > -1; i--) {
+               rvsStr += str[i];
+           }
+           
+           form.input.value  = rvsStr;
+       }
+    </script>
+</head>
+
+<body>
+    <form id="form">
+        <label for="input">Enter a string to be reversed: </label>
+        <input type="text" name="input" size="50" autofocus>
+        <input type="button" value="Reverse it!" onclick="reverseString()">
+    </form>
+</body>
+
+</html>
