@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>stuff</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+
+    </style>
+    <script>
+        var inputs = new Array();
+        var counter = 0;
+
+        function addString() {
+            inputs[counter] = form.input.value;
+            form.input.value = "";
+            counter++;
+        }
+
+        function outputStrings() {
+            form.output.value = "";
+            for(var i = 0; i < inputs.length; i++) {
+                if(inputs[i].toLowerCase().charAt(0) == 'b')
+                    form.output.value += inputs[i] + "\n";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form id="form">
+        <p>
+            <label>Enter strings to add to array.</label><br>
+            <input type="text" name="input" size="50" autofocus>
+            <input type="button" value="Add string" onclick="addString()">
+        </p>
+
+        <p>
+            <label>All strings that began with a "B".</label>
+            <input type="button" value="Output" onclick="outputStrings()"><br>
+            <textarea name="output" cols="50" rows="10"></textarea>
+        </p>
+    </form>
+</body>
+
+</html>
