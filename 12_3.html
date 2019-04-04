@@ -13,6 +13,8 @@
         
         function convert() {
             input.value = input.value.replace("&", "and");
+            if(input.value.indexOf("&") != -1)
+                convert();
         }
     </script>
 </head>
