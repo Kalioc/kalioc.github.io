@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>stuff</title>
+    <style>
+    </style>
+    <script>
+        function init() {
+            input.value = "This & will be converted to \"and\" when it loses focus.";
+        }
+        
+        function convert() {
+            input.value = input.value.replace("&", "and");
+        }
+    </script>
+</head>
+
+<body onload="init()"> <!-- onload used to add a default sentence cleanly -->
+    <form id="form">
+        <p><label>Converts any ampersands to "and" when focus is lost.</label></p>
+        <textarea id="input" cols="50" rows="5" onblur="convert()" autofocus></textarea>
+    </form>
+</body>
+
+</html>
