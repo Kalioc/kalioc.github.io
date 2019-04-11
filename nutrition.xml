@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- Grandma White's Cookies Nutritional Value -->
+<product>
+	<productName>Grandma White’s Cookies</productName>
+	<servingSize>
+		<value>1</value>
+		<unit>package</unit>
+	</servingSize>
+	<calories>
+		<value>260</value>
+		<unit>calories</unit>
+	</calories>
+	<fatCalories>
+		<value>100</value>
+		<unit>calories</unit>
+	</fatCalories>
+	<fat>
+		<value>11</value>
+		<unit>grams</unit>
+	</fat>
+	<saturatedFat>
+		<value>2</value>
+		<unit>grams</unit>
+	</saturatedFat>
+	<cholesterol>
+		<value>5</value>
+		<unit>milligrams</unit>
+	</cholesterol>
+	<sodium>
+		<value>210</value>
+		<unit>milligrams</unit>
+	</sodium>
+	<carbs>
+		<value>36</value>
+		<unit>grams</unit>
+	</carbs>
+	<fiber>
+		<value>2</value>
+		<unit>grams</unit>
+	</fiber>
+	<sugar>
+		<value>15</value>
+		<unit>grams</unit>
+	</sugar>
+	<protein>
+		<value>5</value>
+		<unit>grams</unit>
+	</protein>
+</product>
