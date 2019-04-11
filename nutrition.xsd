@@ -1,0 +1,127 @@
+<?xml version = "1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- Simple data definitions -->
+	<xs:element name="value" type="xs:int"/>
+	<xs:element name="unit" type="xs:string"/>
+	<xs:element name="productName" type="xs:string"/>
+	
+	<!-- Complex data definitions -->
+	<xs:element name="servingSize">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="calories">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="fatCalories">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="fat">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="saturatedFat">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="cholesterol">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="sodium">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="carbs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="fiber">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="sugar">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="protein">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="unit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Definition of product element -->
+	<xs:element name="product">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="productName"/>
+				<xs:element ref="servingSize"/>
+				<xs:element ref="calories"/>
+				<xs:element ref="fatCalories"/>
+				<xs:element ref="fat"/>
+				<xs:element ref="saturatedFat"/>
+				<xs:element ref="cholesterol"/>
+				<xs:element ref="sodium"/>
+				<xs:element ref="carbs"/>
+				<xs:element ref="fiber"/>
+				<xs:element ref="sugar"/>
+				<xs:element ref="protein"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
