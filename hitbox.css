@@ -1,0 +1,17 @@
+#container { position: relative; }
+.button { position: absolute; }
+#L { top: 30px; left: 0px;}
+#D { top: 35px; left: 35px;}
+#R { top: 40px; left: 70px;}
+#U { top: 80px; left: 80px;}
+
+#X { top: 25px; left: 105px;}
+#Y { top: 15px; left: 140px;}
+#RB { top: 15px; left: 175px;}
+#LB { top: 15px; left: 210px;}
+
+
+#A { top: 55px; left: 105px;}
+#B { top: 45px; left: 140px;}
+#RT { top: 45px; left: 175px;}
+#LT { top: 45px; left: 210px;}
